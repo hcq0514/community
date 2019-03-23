@@ -1,4 +1,4 @@
-package com.community.entity;
+package com.community.common.entity;
 
 /**
  * 状态码实体类

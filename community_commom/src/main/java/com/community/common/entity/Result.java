@@ -1,4 +1,4 @@
-package com.community.entity;
+package com.community.common.entity;
 
 public class Result {
     private boolean flag;//是否成功
