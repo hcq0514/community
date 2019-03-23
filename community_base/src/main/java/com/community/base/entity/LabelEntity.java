@@ -3,13 +3,14 @@ package com.community.base.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @author hcq
  */
 @Entity
 @Table(name="comm_label")
-public class LabelEntity {
+public class LabelEntity implements Serializable {
     @Id
     private String id;//
     private String labelname;//标签名称
