@@ -1,9 +1,12 @@
 package com.community.base.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
+
+import static com.baomidou.mybatisplus.annotation.IdType.ID_WORKER_STR;
 
 /**
  * @author hcq
@@ -12,6 +15,7 @@ import java.io.Serializable;
 @Data
 @TableName("comm_label")
 public class LabelEntity implements Serializable {
+    @TableId(type = ID_WORKER_STR)
     private String id;
     //标签名称
     private String labelname;

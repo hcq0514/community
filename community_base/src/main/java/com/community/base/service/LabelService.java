@@ -21,7 +21,6 @@ public class LabelService {
     IdWorker idWorker;
 
     public void add(LabelEntity labelEntity) {
-        labelEntity.setId(idWorker.generateId());
         labelDao.insert(labelEntity);
     }
 
