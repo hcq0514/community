@@ -1,5 +1,7 @@
 package com.community.base.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.community.base.entity.LabelEntity;
 import com.community.base.service.LabelService;
 import com.community.common.entity.Result;
@@ -45,6 +47,13 @@ public class LabelController {
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll() {
         return new Result(true, StatusCode.OK, "查询成功", labelService.findAll());
+    }
+
+    @RequestMapping(value = "testPage",method = RequestMethod.GET)
+    public Result pageTest() {
+        Page<LabelEntity> page = new Page<>(2, 1);
+        IPage<LabelEntity> labelEntityIPage = labelService.selectPageVo(page);
+        return new Result(true, StatusCode.OK, "查询成功", labelEntityIPage);
     }
 
 

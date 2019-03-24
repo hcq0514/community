@@ -1,8 +1,9 @@
 package com.community.base.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.community.base.dao.LabelDao;
 import com.community.base.entity.LabelEntity;
-import com.community.common.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +18,6 @@ public class LabelService {
     @Autowired
     LabelDao labelDao;
 
-    @Autowired
-    IdWorker idWorker;
 
     public void add(LabelEntity labelEntity) {
         labelDao.insert(labelEntity);
@@ -41,4 +40,7 @@ public class LabelService {
     }
 
 
+    public  IPage<LabelEntity> selectPageVo(Page page) {
+        return labelDao.selectPageVo(page);
+    }
 }

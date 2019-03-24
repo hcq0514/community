@@ -1,4 +1,5 @@
 package com.community.base;
+import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.community.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +14,9 @@ public class BaseApplication {
 
 
     @Bean
-    public IdWorker idWorker(){
-        return new IdWorker();
+    public PaginationInterceptor paginationInterceptor() {
+        PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
+        return paginationInterceptor;
     }
+
 }
