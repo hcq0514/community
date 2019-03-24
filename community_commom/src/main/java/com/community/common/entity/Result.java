@@ -1,5 +1,8 @@
 package com.community.common.entity;
 
+import lombok.Data;
+
+@Data
 public class Result {
     private boolean flag;//是否成功
     private Integer code;// 返回码
@@ -24,35 +27,4 @@ public class Result {
         this.message = message;
     }
 
-    public boolean isFlag() {
-        return flag;
-    }
-
-    public void setFlag(boolean flag) {
-        this.flag = flag;
-    }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
 }

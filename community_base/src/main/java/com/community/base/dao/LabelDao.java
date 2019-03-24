@@ -1,14 +1,19 @@
 package com.community.base.dao;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.community.base.entity.LabelEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * @Author: hcq
  * @Date: 2019/3/23
  */
-public interface LabelDao extends JpaRepository<LabelEntity, String>, JpaSpecificationExecutor<LabelEntity> {
-    //    JpaRepository提供了基本的增删改查
-    //JpaSpecificationExecutor用于做复杂的条件查询
+@Mapper
+public interface LabelDao extends BaseMapper<LabelEntity> {
+
 }

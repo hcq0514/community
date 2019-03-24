@@ -22,23 +22,23 @@ public class LabelService {
 
     public void add(LabelEntity labelEntity) {
         labelEntity.setId(idWorker.generateId());
-        labelDao.save(labelEntity);
+        labelDao.insert(labelEntity);
     }
 
     public void deleteById(String id) {
         labelDao.deleteById(id);
     }
 
-    public void update(LabelEntity labelEntity){
-        labelDao.save(labelEntity);
+    public void update(LabelEntity labelEntity) {
+        labelDao.insert(labelEntity);
     }
 
     public List<LabelEntity> findAll() {
-        return labelDao.findAll();
+        return labelDao.selectList(null);
     }
 
     public LabelEntity findById(String id) {
-        return labelDao.findById(id).get();
+        return labelDao.selectById(id);
     }
 
 
