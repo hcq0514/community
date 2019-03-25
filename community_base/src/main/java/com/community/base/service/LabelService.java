@@ -43,4 +43,16 @@ public class LabelService {
     public  IPage<LabelEntity> selectPageVo(Page page) {
         return labelDao.selectPageVo(page);
     }
+
+    public  List<LabelEntity> selectAvailableLabel() {
+        return labelDao.selectAvailableLabel();
+    }
+
+    /**
+     * 查询推荐标签
+     * @return
+     */
+    public  List<LabelEntity> selectRecommendLabel() {
+        return labelDao.selectByStateAndRecommend("1","1");
+    }
 }

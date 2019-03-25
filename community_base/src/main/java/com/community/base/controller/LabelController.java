@@ -56,6 +56,17 @@ public class LabelController {
         return new Result(true, StatusCode.OK, "查询成功", labelEntityIPage);
     }
 
+    @RequestMapping(method = RequestMethod.GET)
+    public Result selectAvailableLabel() {
+        return new Result(true, StatusCode.OK, "查询成功", labelService.selectAvailableLabel());
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public Result selectRecommendLabel() {
+        return new Result(true, StatusCode.OK, "查询成功", labelService.selectRecommendLabel());
+    }
+
+
 
 
 }
