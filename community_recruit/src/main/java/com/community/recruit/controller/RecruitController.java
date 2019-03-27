@@ -42,7 +42,7 @@ public class RecruitController  {
      */
     @RequestMapping(value="/search/newlist",method= RequestMethod.GET)
     public  Result newlist(){
-        List<RecruitEntity> list = recruitService.selectLatestJob(StateCode.OPEN);
+        List<RecruitEntity> list = recruitService.selectLatestJob(StateCode.VALID);
         return new Result(true,StatusCode.OK,"查询成功",list);
     }
 
