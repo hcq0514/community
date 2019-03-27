@@ -7,15 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="community_article" />
         <module name="community_base" />
         <module name="community_commom" />
+        <module name="community_qa" />
+        <module name="community_recruit" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="community_recruit (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="community_base" options="-parameters" />
-      <module name="community_commom" options="-parameters" />
+      <module name="community_base" options="" />
+      <module name="community_commom" options="" />
     </option>
   </component>
 </project>

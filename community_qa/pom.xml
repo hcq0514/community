@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>community_recruit</artifactId>
-
+    <artifactId>community_qa</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.community</groupId>

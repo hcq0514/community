@@ -11,6 +11,9 @@
         <module>community_commom</module>
         <module>community_base</module>
         <module>community_recruit</module>
+        <module>community_qa</module>
+        <module>community_qa</module>
+        <module>community_article</module>
     </modules>
     <packaging>pom</packaging>
 

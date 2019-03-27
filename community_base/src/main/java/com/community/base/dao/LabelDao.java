@@ -38,4 +38,6 @@ public interface LabelDao extends BaseMapper<LabelEntity> {
     @Select("select * from " + TABLE_NAME + "  where  state = #{state} and recommend = #{recommend}")
     List<LabelEntity> selectByStateAndRecommend(String state,String recommend);
 
+
+
 }
