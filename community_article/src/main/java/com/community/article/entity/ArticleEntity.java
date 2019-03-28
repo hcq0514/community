@@ -1,11 +1,16 @@
 package com.community.article.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import static com.baomidou.mybatisplus.annotation.IdType.ID_WORKER_STR;
 
 /**
  * <p>
@@ -16,12 +21,13 @@ import java.time.LocalDateTime;
  * @since 2019-03-27
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
+@TableName("comm_article")
 public class ArticleEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(type = ID_WORKER_STR)
+    private String id;
     /**
      * 专栏ID
      */

@@ -18,6 +18,16 @@ public class ArticleController {
     @Autowired
     ArticleService articleService;
 
+    /**
+     * 审核
+     * @param id
+     * @return
+     */
+    @RequestMapping(value="/select/{id}",method= RequestMethod.GET)
+    public Result selectById(@PathVariable String id){
+        articleService.selectById(id);
+        return new Result(true,StatusCode.OK,"审核成功");
+    }
 
     /**
      * 审核

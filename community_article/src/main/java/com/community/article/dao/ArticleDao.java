@@ -1,6 +1,7 @@
 package com.community.article.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.community.article.entity.ArticleEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date: 2019/3/27
  */
 @Mapper
-public interface ArticleDao extends BaseMapper<ArticleDao> {
+public interface ArticleDao extends BaseMapper<ArticleEntity> {
     String TABLE_NAME = "comm_article";
 
     /**
