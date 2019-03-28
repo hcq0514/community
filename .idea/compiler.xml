@@ -12,6 +12,7 @@
         <module name="community_commom" />
         <module name="community_qa" />
         <module name="community_recruit" />
+        <module name="community_spit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
