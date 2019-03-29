@@ -11,9 +11,11 @@
         <module name="community_base" />
         <module name="community_commom" />
         <module name="community_eureka" />
+        <module name="community_manager" />
         <module name="community_recruit" />
         <module name="community_spit" />
         <module name="community_test" />
+        <module name="communtiy_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

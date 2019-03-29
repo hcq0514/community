@@ -18,6 +18,8 @@
         <module>community_api</module>
         <module>community_test</module>
         <module>api</module>
+        <module>community_manager</module>
+        <module>communtiy_web</module>
     </modules>
     <packaging>pom</packaging>
 
