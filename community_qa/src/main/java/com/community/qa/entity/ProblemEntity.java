@@ -1,11 +1,15 @@
 package com.community.qa.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import static com.baomidou.mybatisplus.annotation.IdType.ID_WORKER_STR;
 
 /**
  * <p>
@@ -16,9 +20,13 @@ import java.time.LocalDateTime;
  * @since 2019-03-27
  */
 @Data
+@TableName("comm_problem")
 public class ProblemEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
+    @TableId(type = ID_WORKER_STR)
+    private String id;
 
     /**
      * 标题

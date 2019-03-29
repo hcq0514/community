@@ -5,8 +5,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.community.qa.dao.ProblemDao;
 import com.community.qa.entity.ProblemEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ProblemService {
+
     @Autowired
     ProblemDao problemDao;
 

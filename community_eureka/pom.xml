@@ -3,24 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>community_parent</artifactId>
+        <artifactId>community_qa</artifactId>
         <groupId>com.community</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../community_qa/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>community_recruit</artifactId>
-
+    <artifactId>community_eureka</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.community</groupId>
-            <artifactId>community_commom</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

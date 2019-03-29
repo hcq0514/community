@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/label")
 @CrossOrigin
-public class LabelController {
+public class LabelController implements BaseApi {
 
     @Autowired
     LabelService labelService;
@@ -56,15 +56,15 @@ public class LabelController {
         return new Result(true, StatusCode.OK, "查询成功", labelEntityIPage);
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public Result selectAvailableLabel() {
-        return new Result(true, StatusCode.OK, "查询成功", labelService.selectAvailableLabel());
-    }
-
-    @RequestMapping(method = RequestMethod.GET)
-    public Result selectRecommendLabel() {
-        return new Result(true, StatusCode.OK, "查询成功", labelService.selectRecommendLabel());
-    }
+//    @RequestMapping(method = RequestMethod.GET)
+//    public Result selectAvailableLabel() {
+//        return new Result(true, StatusCode.OK, "查询成功", labelService.selectAvailableLabel());
+//    }
+//
+//    @RequestMapping(method = RequestMethod.GET)
+//    public Result selectRecommendLabel() {
+//        return new Result(true, StatusCode.OK, "查询成功", labelService.selectRecommendLabel());
+//    }
 
 
 
