@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/label")
 @CrossOrigin
-public class LabelController implements BaseApi {
+public class LabelController  {
 
     @Autowired
     LabelService labelService;

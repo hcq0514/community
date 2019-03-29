@@ -17,6 +17,7 @@
         <module>community_spit</module>
         <module>community_api</module>
         <module>community_test</module>
+        <module>api</module>
     </modules>
     <packaging>pom</packaging>
 
