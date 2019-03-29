@@ -15,6 +15,7 @@
         <module name="community_recruit" />
         <module name="community_spit" />
         <module name="community_test" />
+        <module name="community_user" />
         <module name="communtiy_web" />
       </profile>
     </annotationProcessing>

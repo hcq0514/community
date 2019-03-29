@@ -9,24 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>community_spit</artifactId>
+    <artifactId>community_user</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.community</groupId>
-            <artifactId>community_commom</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -37,5 +24,6 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>
